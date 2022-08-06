@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+    <main>
+
+        <section class="calculater">
+            <section class="calc-back"></section>
+            <section class="calc-header">
+
+                <div class="export">
+
+                    <input type="text" id="input">
+                    <h1 id="h1"></h1>
+
+
+                </div>
+                <button class="btn" onclick="chnge_icon()">
+                    <i class="fa fa-moon-o"></i>
+                </button>
+            </section>
+            <section class="calc-body">
+                <section class="calc-button-wrapper">
+
+                    <span class="keys" onclick="_remove()">C</span>
+                    <span class="keys  " onclick="_click('/')">/</span>
+                    <span class="keys " onclick="_click('*')">*</span>
+                    <span class="keys" onclick="_del()"><i class="fa fa-eraser"></i></span>
+                    <span class="keys number " onclick="_click('7')">7</span>
+                    <span class="keys number " onclick="_click('8')">8</span>
+                    <span class="keys number " onclick="_click('9')">9</span>
+                    <span class="keys " onclick="_click('-')">-</span>
+                    <span class="keys number " onclick="_click('4')">4</span>
+                    <span class="keys number " onclick="_click('5')">5</span>
+                    <span class="keys number " onclick="_click('6')">6</span>
+                    <span class="keys " onclick="_click('+')">+</span>
+                    <span class="keys number " onclick="_click('1')">1</span>
+                    <span class="keys number " onclick="_click('2')">2</span>
+                    <span class="keys number " onclick="_click('3')">3</span>
+                    <span class="keys number" onclick="_click('%')">%</span>
+                    <span class="keys " onclick="_res()">=</span>
+                    <span class="keys number" onclick="_click('0')">0</span>
+                    <span class="keys number" onclick="_click('.')">.</span>
+                </section>
+            </section>
+
+        </section>
+
+    </main>
+
+</body>
+<script src="js/master.js"></script>
+
+</html>
